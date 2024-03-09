@@ -1,0 +1,135 @@
+*{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: var(--white-0);
+  box-sizing: border-box;
+}
+
+:root{
+    --gray: #bdc3c7;
+    --black-0: #1E293B;
+    --black-1: #334155;
+    --black-2: #94A3B8;
+    --white-0: #F1F5F9;
+}
+
+body{
+    background-color: var(--black-0);
+    display: flex;
+    min-height: 100dvh;
+    justify-content: center;
+}
+
+nav{
+    padding: 24px;
+    border-right: 2px solid var(--black-1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+    max-height: 100dvh;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+}
+nav ul li button{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    gap: 4px;
+}
+nav ul li button:hover{
+    background-color: var(--black-1);
+}
+nav ul li button span:last-child{
+    margin-left: auto;
+}
+nav ul li ul{
+    list-style: disc !important;
+    margin-left: 24px;
+    overflow: hidden;
+    height: max-content;
+}
+nav ul li ul li button{
+    margin-left: 0;
+    padding: 4px !important;
+}
+nav ul li ul li button:hover{
+    background-color: var(--black-1);
+}
+nav ul li ul li button span{
+    padding: 8px;
+    border-radius: 4px;
+    margin-left: 0 !important;
+    font-size: 12px;
+}
+
+code{
+    background-color: var(--black-1);
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    min-width: max-content;
+}
+code span{
+    font-family: monospace;
+    font-size: 12px;
+}
+code pre{
+    font-size: 12px;
+    font-family: monospace;
+}
+code button{
+    background: none;
+    border: none;
+    border-radius: 99px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    margin-left: auto;
+}
+code button span{
+    margin: auto;
+}
+code button:hover{
+    background-color: var(--black-2);
+}
+
+.router code{
+    align-items: center;
+}
+
+#contents{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-height: 100dvh;
+    overflow-y: auto;
+}
+#contents h2{
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+#contents h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+#contents h4{
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
